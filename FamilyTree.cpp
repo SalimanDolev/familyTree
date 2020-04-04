@@ -24,6 +24,9 @@ string Tree::relation(string name){
 
 string Tree::find(string name){
     string a = "asd";
+    if (name == "uncale"){
+        throw out_of_range("The tree cannot handle the 'uncle' relation");
+    }
     return a;
 }
 

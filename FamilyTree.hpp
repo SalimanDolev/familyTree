@@ -15,23 +15,24 @@ namespace family{
         private:
             string m_name;
             tree_node *root;
+    
         public:
         // empty constructor
-        Tree(){
-            m_name = "";
+      /**  Tree(){
+            m_name = "emty";
             root = NULL;
-        }
+        }**/
         //constructor with variables
         Tree(string childName){
-            if(root == NULL){
+            //if(root == NULL){
                 tree_node *a = new tree_node;
                 root = a;
                 root->name = childName;
                 root->mother = NULL;
                 root->father = NULL;
-            }else{
-                throw "There is allready root";
-            }
+            /**}else{
+                throw out_of_range("There is allready root");
+            }**/
         }
         //functions
         Tree& addFather(string childName, string fatherName);
