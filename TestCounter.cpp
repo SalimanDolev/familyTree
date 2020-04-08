@@ -12,6 +12,7 @@ struct ReporterCounter: public ConsoleReporter {
         if (run_stats.numAsserts >= MIN_TESTS) {
             std::cout << 100 << std::endl;
         } else {
+            std::cout << run_stats.numAsserts << "\n";
             std::cout << "Please write at least " << MIN_TESTS << " tests! " <<  std::endl << 0  << std::endl;
         }
     }
